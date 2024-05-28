@@ -1,0 +1,160 @@
+ 
+ .main3 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.maincontent3 {
+    position: fixed;
+    width: 98%;
+    height: 90vh;
+    margin-top: 9vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .workout-log,
+  .fitness-goal {
+    width: 75%;
+    background-color: rgba(252, 252, 252, 0.205);
+    border-radius: 10px;
+    height: 45vh;
+    margin-top: 2%;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.733);
+    z-index: 1;
+    margin-right: 2%;
+  }
+  
+  .workout-log form {
+    margin-bottom: -5%;
+  }
+  .fitness-goal form{
+    margin-bottom: -2%;
+  }
+.scrolpane{
+    width: 100%;
+    height: 70%;
+    overflow-y: hidden;
+}
+.scrolpane:hover{
+    overflow-y: scroll ;
+    cursor: pointer;
+}
+  .log-list {
+    display: block;
+    width: 100%;
+    height: 5vh;
+  }
+  
+  .log-item {
+    display: flex;
+    border: 1px solid #050505;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .goal-display {
+    display: flex;
+    width: 99.8%;
+    height: 5vh;
+    border: solid black 1px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.445);
+    margin-top: 0.5%;
+  }
+  .goal-display p{
+    width: 50%;
+    margin-left: 5%;
+  }
+  .workout-log h2,
+  .fitness-goal h2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .datachooser{
+    width: 25%;
+    height: 4vh;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10%;
+    border: solid black 1px;
+  } 
+  .textarealog{
+    width: 50%;
+    height: 4vh;
+    border-radius: 10px;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    border: solid black 1px;
+  }
+  .durationmin{
+    display: block;
+    width: 50%;
+    height: 4vh;
+    margin-top: 1vh;
+    font-size: 1.2rem;
+    margin-left: 50%;
+    justify-content: end;
+    border: solid black 1px;
+  }
+  .submitbtn{
+    margin-top: 6%;
+    height: 5vh;
+    margin-left: 10%;
+  }
+  .fitnestrackimg{
+    width: 40%;
+    height: 100%;
+    background-image: url('../images/fitnesstrack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    position: relative;
+  }
+  .fitnestrackimggoal{
+    width: 40%;
+    height: 100%;
+    background-image: url('../images/fitnessgoals.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    position: relative;
+  }
+  .Goalenter{
+    width: 60%;
+    height: 4vh;
+    font-size: 1.2rem;
+    margin-left: 15%;
+  }
+  .Goalenterbtn{
+    width: 40%;
+    margin-top: 5%;
+  }
+  .Goalenterbtn:hover{
+    background-color: orange;
+    color: black;
+  }
+  .goaldis{
+    display: flex;
+    align-items: center;
+  }
+  .targetimg{
+    width: 10%;
+    height: 4vh;
+    background-image: url('../icons/target.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

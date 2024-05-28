@@ -1,0 +1,420 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.maincontent {
+    position: fixed;
+    width: 98%;
+    height: 100vh;
+    margin-top: 9vh;
+}
+
+@font-face {
+    font-family: 'Fitness';
+    src: url('../fonts/JUNO-DEMO.otf') format('opentype');
+}
+
+.behindtext {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 50vh;
+    margin-top: 2%;
+    margin-left: 5%;
+    justify-content: center;
+    font-family: 'Fitness', sans-serif;
+    font-size: 12rem;
+    color: white;
+    opacity: 0.6;
+    align-items: center;
+    animation: Animation2 4s ease forwards;
+}
+
+.mainimage {
+    position: absolute;
+    display: flex;
+    width: 25%;
+    height: 90%;
+    margin-left: 35%;
+    margin-top: 1%;
+    background-image: url('../images/mainimage.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: Animation 4s ease forwards;
+}
+
+@keyframes Animation {
+    from {
+        margin-top: 50%;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Animation2 {
+    from {
+        margin-left: -50%;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.boxescontain {
+    position: absolute;
+    display: flex;
+    width: 35%;
+    height: 15vh;
+    margin-top: 60vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    animation: Animation3 4s ease forwards;
+}
+
+.boxcards {
+    display: flex;
+    width: 25%;
+    height: 13vh;
+    border-radius: 10px;
+    animation: Animation4 2s ease forwards;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+@keyframes Animation3 {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+
+    to {
+        width: 35%;
+        opacity: 1;
+    }
+}
+
+@keyframes Animation4 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.boxcards p{
+    position: absolute;
+    margin-top: 20%;
+    font-size: 1.5rem;
+}
+
+.cards{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    margin-left: 60%;
+    margin-top:45vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    animation: Animation5 4s ease forwards;
+}
+
+.card_box {
+    width:35%;
+    height: 30vh;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.945);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(1.2);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box .span1::before {
+    content: 'Silver';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box .span2::before {
+    content: 'Gold';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box .span3::before {
+    content: 'Platinum';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+  .card_box p{
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 100%;
+  }
+  @keyframes Animation5 {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 58%;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heartbeat {
+    animation: heartbeat 0.8s infinite; 
+}
+
+@media (max-width: 576px) {
+    
+}
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+    .cards{
+        display: flex;
+        width: 45%;
+        height: 35%;
+        margin-top:50vh;
+        margin-left: 60%;
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: center;
+        animation: Animation6 4s ease forwards;
+    }
+    .card_box {
+        width:25%;
+        height: 25vh;
+        border-radius: 20px;
+        background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+        position: relative;
+        box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.945);
+        cursor: pointer;
+        transition: all .3s;
+      }
+      .card_box:hover {
+        transform: scale(1.2);
+      }
+      .card_box p{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 30%;
+        margin-top: 60%;
+      }
+}
+
+@media (min-width: 992px) {
+    
+.cards{
+    display: flex;
+    width: 40%;
+    height: 35%;
+    margin-left: 58%;
+    margin-top:50vh;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    animation: Animation5 4s ease forwards;
+}
+
+.card_box {
+    width:28%;
+    height: 28vh;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.945);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(1.2);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box .span1::before {
+    content: 'Silver';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box .span2::before {
+    content: 'Gold';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box .span3::before {
+    content: 'Platinum';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+  .card_box p{
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 100%;
+  }
+}
+
+@keyframes Animation6 {
+    from {
+        margin-left: 100%;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 55%;
+    }
+}
